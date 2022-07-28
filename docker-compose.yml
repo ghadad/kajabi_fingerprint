@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  server:
+    build: ./server
+    restart: always
+    environment:
+      - DEBUG=1
+      - FASTIFY_PORT=8000
+      - CLIENT_PORT=3000
+    ports:
+      - 8000:8000
+    volumes:
+      - ./server:/app
+    entrypoint:
+      - npm
+      - run
+      - dev
