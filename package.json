@@ -1,0 +1,40 @@
+{
+  "name": "server2",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^4.0.0",
+    "@fastify/cors": "^7.0.0",
+    "@fastify/sensible": "^4.0.0",
+    "config": "^3.3.7",
+    "dotenv": "^16.0.1",
+    "fastify": "^3.0.0",
+    "fastify-cli": "^3.1.0",
+    "fastify-plugin": "^3.0.0",
+    "find": "^0.3.0",
+    "generic-pool": "^3.8.2",
+    "js-yaml": "^4.1.0",
+    "knex": "^2.1.0",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.7",
+    "p-all": "^3.0.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "tap": "^16.1.0"
+  }
+}
+
