@@ -5,10 +5,14 @@ const AutoLoad = require('@fastify/autoload')
 require('dotenv').config()
 const Config = require('config');
 
-console.log(Config);
  
 module.exports = async function (fastify, opts) {
 
+  fastify.register(require('@fastify/static'), {
+    root: path.join(__dirname, 'public'),
+    prefix: '/public/', // optional: default '/'
+  })
+  
  
   fastify.register(require('@fastify/cors'), { 
     // put your options here
