@@ -5,8 +5,7 @@ services:
     restart: always
     environment:
       - DEBUG=1
-      - FASTIFY_PORT=8000
-      - CLIENT_PORT=3000
+      - FASTIFY_PORT=3000
     ports:
       - 8000:8000
     volumes:
